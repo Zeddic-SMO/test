@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
+const brandName = import.meta.env.VITE_BRAND_NAME || 'Daylight'
+
 const notes = [
   {
     n: 'I',
@@ -105,7 +107,7 @@ function App() {
       <header className="nav">
         <a href="#" className="brand">
           <span className="brand-mark" aria-hidden="true" />
-          Daylight
+          {brandName}
         </a>
         <a href="#subscribe" className="nav-link">
           Subscribe
